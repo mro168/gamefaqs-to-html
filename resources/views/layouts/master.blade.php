@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>@yield('title')</title>
         <style>
             html, body {
                 width: 700px ;

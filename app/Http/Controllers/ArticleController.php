@@ -23,7 +23,10 @@ class ArticleController extends Controller
             // return redirect()->action('ArticleController@p404');
             return abort(404);
         } else {
-            return view('article/show', ['content' => $article->content]);
+            return view('article/show', [
+              'content' => $article->content,
+              'title' => $article->title
+            ]);
         }
     }
 
